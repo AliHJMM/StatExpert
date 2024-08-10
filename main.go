@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"STATEXPERT/functions"
 )
 
 func main(){
@@ -13,7 +14,7 @@ func main(){
 
 	filename := os.Args[1]
 
-	array, err := ReadNumbersFromFile(filename)
+	array, err := functions.ReadNumbersFromFile(filename)
 	if err != nil {
 		log.Fatalf("Error reading from file: %s", err)
 	}
