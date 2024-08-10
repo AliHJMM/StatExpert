@@ -19,4 +19,8 @@ func CalculateStatistics(array []int) (average, median, variance, stddev float64
 	} else {
 		median = math.Ceil(float64(array[len(array)/2]))
 	}
+	var varianceSum float64
+	for _, num := range array {
+		varianceSum += math.Pow((float64(num) - average), 2)
+	}
 }
