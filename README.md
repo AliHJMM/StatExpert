@@ -10,6 +10,10 @@ STATEXPERT is a command-line tool designed to process a list of numbers from a f
 - [Ali Hasan Jasim](https://github.com/AliHJMM)
 
 ## Usage
+1. git clone repoLink
+2. cd into the directory
+3. go run main.go <filename>
+-  go run main.go data.txt
 
 ### How to Run
 
