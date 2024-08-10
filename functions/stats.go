@@ -23,4 +23,6 @@ func CalculateStatistics(array []int) (average, median, variance, stddev float64
 	for _, num := range array {
 		varianceSum += math.Pow((float64(num) - average), 2)
 	}
+
+	variance = math.Round(varianceSum / float64(len(array)))
 }
