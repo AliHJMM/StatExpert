@@ -14,7 +14,7 @@ STATEXPERT is a command-line tool designed to process a list of numbers from a f
 ### How to Run
 1. git clone repoLink
 2. cd into the directory
-3. go run main.go <filename>
+3. go run main.go filename
 
 ## Implementation Details
 
