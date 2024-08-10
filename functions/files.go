@@ -21,16 +21,16 @@ func ReadNumbersFromFile(filename string) ([]int, error) {
 	for file.Scan() {
 		line := strings.TrimSpace(file.Text())
 		if line == "" {
-			continue // Skip empty lines
+			continue 
 		}
 		if !isValidNumber(line) {
 			log.Printf("Invalid number detected: '%s'", line)
-			continue // Skip lines with invalid numbers
+			continue 
 		}
 		parsedValue, err := strconv.Atoi(line)
 		if err != nil {
 			log.Printf("Error parsing line '%s': %s", line, err)
-			continue // Skip lines that can't be parsed
+			continue
 		}
 		array = append(array, parsedValue)
 	}
