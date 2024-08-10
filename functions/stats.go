@@ -13,4 +13,10 @@ func CalculateStatistics(array []int) (average, median, variance, stddev float64
 	}
 
 	average = math.Round(total / float64(len(array)))
+
+	if len(array)%2 == 0 {
+		median = math.Ceil(float64((array[(len(array)/2)-1])+(array[(len(array)/2)])) / 2)
+	} else {
+		median = math.Ceil(float64(array[len(array)/2]))
+	}
 }
