@@ -11,4 +11,6 @@ func CalculateStatistics(array []int) (average, median, variance, stddev float64
 	for _, num := range array {
 		total += float64(num)
 	}
+
+	average = math.Round(total / float64(len(array)))
 }
