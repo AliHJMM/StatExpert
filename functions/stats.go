@@ -25,4 +25,6 @@ func CalculateStatistics(array []int) (average, median, variance, stddev float64
 	}
 
 	variance = math.Round(varianceSum / float64(len(array)))
+
+	stddev = math.Round(math.Sqrt(variance))
 }
