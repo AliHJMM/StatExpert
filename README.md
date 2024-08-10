@@ -17,8 +17,7 @@ STATEXPERT is a command-line tool designed to process a list of numbers from a f
 3. go run main.go <filename>
 -  go run main.go data.txt
 
+## Implementation Details
 
-### Implementation Details
-
-#### Algorithm
+### Algorithm
 
